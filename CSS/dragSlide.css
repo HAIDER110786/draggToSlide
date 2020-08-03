@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    overflow-y: hidden;
+}
+
+.mainDiv{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.slider{
+    display:flex;
+    width: 100%;
+    transform:scale(0.90);
+    overflow-x: scroll;
+    perspective: 500px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+.slider.active{
+    transform:scale(1);
+}
+
+.slidePanel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:80px;
+    height: 200px;
+    padding: 30px;
+    background-color:cornflowerblue;
+    border: 1px solid rgb(22, 66, 150);
+    user-select: none;
+}
